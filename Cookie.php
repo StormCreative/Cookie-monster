@@ -18,7 +18,7 @@ if ( checkCookie ( FALSE ) === FALSE ): ?>
 		
 		margin-bottom:1em;
 		padding-top:1em;
-		width:100%;
+		width:96%;
 	}
 	
 	.cookie__contain {
