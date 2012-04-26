@@ -11,10 +11,8 @@
 		-webkit-text-size-adjust: 100%;
 		-ms-text-size-adjust: 100%;
 		
-		background:red;
-
+		margin-bottom:1em;
 		padding-top:1em;
-		position:absolute;
 		width:100%;
 	}
 	
@@ -35,10 +33,14 @@
 		background: -o-linear-gradient(top,  hsl(240,1%,35%) 0%,hsl(240,1%,25%) 100%); /* Opera 11.10+ */
 		background: -ms-linear-gradient(top,  hsl(240,1%,35%) 0%,hsl(240,1%,25%) 100%); /* IE10+ */
 		background: linear-gradient(top,  hsl(240,1%,35%) 0%,hsl(240,1%,25%) 100%); /* W3C */
+		border:1px solid #444;
 		
 		-webkit-box-sizing:border-box;
 		-moz-box-sizing:border-box;
 		box-sizing:border-box;
+		-webkit-box-shadow:0 0 1em rgba(0, 0, 0, 0.5);
+		-moz-box-shadow:0 0 1em rgba(0, 0, 0, 0.5);
+		box-shadow:0 0 1em rgba(0, 0, 0, 0.5);
 
 	}
 	
