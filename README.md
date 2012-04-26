@@ -1,3 +1,9 @@
 #Cookie monster
 
-Module containing files for cookie law
+A responsive module to prompt users to agree to the storing of cookies.
+
+###Files
+- Cookie.php - source file
+- Cookie.min.php - minified file
+
+#####Supports IE6+

@@ -1,5 +1,4 @@
 <style>
-	
 
 	.storm-cookie {
 		
@@ -151,7 +150,6 @@
 	#js-cookie-info {
 		display:none;
 	}
-	
 	
 </style>
 <!--[if IE 6]><form class="storm-cookie ie6"><![endif]-->
