@@ -1,0 +1,4 @@
+Cookie-monster
+==============
+
+Cookie module.
