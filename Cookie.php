@@ -137,12 +137,12 @@
 	}
 	
 	/* IE Fixes */
-	.ie7 .cookie__contain,
-	.ie6 .cookie__contain {
+	.ie7-cookie,
+	.ie6-cookie {
 		padding-bottom:.2em;	
 	}
 	
-	.ie6 .cookie__contain {
+	.ie6-cookie {
 		width:900px;	
 	}
 	
@@ -152,10 +152,10 @@
 	}
 	
 </style>
-<!--[if IE 6]><form class="storm-cookie ie6"><![endif]-->
-<!--[if IE 7]><form class="storm-cookie ie7"><![endif]-->
-<!--[if gt IE 7]><!--> <form class="storm-cookie"> <!--<![endif]-->
-	<div class="cookie__contain">
+<form class="storm-cookie">
+    <!--[if IE 6]><div class="cookie__contain ie6-cookie"><![endif]-->
+    <!--[if IE 7]><div class="cookie__contain ie7-cookie"><![endif]-->
+	<!--[if gt IE 7]><!--> <div class="cookie__contain"> <!--<![endif]-->
         <p class="cookie__title">Important</p>
         <div class="cookie__content">
             <p>This website requires the use of cookies to operate correctly and for your convenience when revisiting in the future. Please click "I Agree" if you would like to enable cookies on this website. For more information <span id="js-cookie-link" class="cookie__link">click here</span>.</p>
