@@ -18,7 +18,7 @@ if ( checkCookie ( FALSE ) === FALSE ): ?>
 		
 		margin-bottom:1em;
 		padding-top:1em;
-		width:96%;
+		width:100%;
 	}
 	
 	.cookie__contain {
@@ -28,7 +28,7 @@ if ( checkCookie ( FALSE ) === FALSE ): ?>
 		max-width:900px;
 		overflow:hidden;
 		padding:.7em;
-		width:100%;
+		width:96%;
 		
 		/* Styles */
 		background: #58585a; /* Old browsers */
