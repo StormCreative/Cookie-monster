@@ -22,7 +22,10 @@ function checkCookie ( $redirect = TRUE )
 function setCookies ()
 {
 	if ( !!$_POST[ 'accept_cookie' ] )
+	{
 		setcookie( "user_auth", TRUE );	
+		header ( 'location: /' );
+	}
 }
 
 ?>
