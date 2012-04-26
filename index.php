@@ -7,13 +7,11 @@
     <meta charset="utf-8">
     <title>Title</title>
     <script src="Assets/Scripts/Utils/modernizr.min.js"></script>
-    <meta name="author" content="sirBrad" />
+    <meta name="author" content="Storm Creative" />
     <link type="text/plain" rel="author" href="humans.txt">
     <link rel="stylesheet" href="Assets/Styles/index.css" />
-    <script src="Assets/Scripts/Utils/respond.min.js"></script>
 </head>
 <body>	
-	// Content
-    <script data-main="Assets/Scripts/main" src="Assets/Scripts/Require.min.js"></script>
+	<?php include 'Cookie.php'; ?>
 </body>
 </html>
