@@ -1,3 +1,9 @@
+<?php 
+include ( 'Cookie_functions.php' );
+
+setCookies ();
+
+if ( checkCookie ( FALSE ) === FALSE ): ?>
 <style>
 
 	.storm-cookie {
@@ -152,7 +158,7 @@
 	}
 	
 </style>
-<form class="storm-cookie">
+<form class="storm-cookie" action="" method="post">
     <!--[if IE 6]><div class="cookie__contain ie6-cookie"><![endif]-->
     <!--[if IE 7]><div class="cookie__contain ie7-cookie"><![endif]-->
 	<!--[if gt IE 7]><!--> <div class="cookie__contain"> <!--<![endif]-->
@@ -161,7 +167,7 @@
             <p>This website requires the use of cookies to operate correctly and for your convenience when revisiting in the future. Please click "I Agree" if you would like to enable cookies on this website. For more information <span id="js-cookie-link" class="cookie__link">click here</span>.</p>
             <p id="js-cookie-info">The Privacy and Electronic Communications (EC Directive) Regulations 2003 relate to the use of so called 'cookies' on websites – and in particular how they store users' details when they visit the sites. All users visiting this website are given the option to not use cookies. A cookie is simply a small file that is downloaded onto a computer or mobile device when a user accesses this site. They are then sent back to us on subsequent visits, so we can recognise who is logging on. They are also essential for online stores and other simple software to operate correctly. In short, without them, some aspects of this website will not work. Cookies are also used for analytics software to help us improve the quality of service you receive on future visits to our site. Please click "I Agree" if you would like to enable cookies on this website.</p>
         </div>
-        <input type="submit" class="cookie__submit" value="I Agree">
+        <input type="submit" class="cookie__submit" name="accept_cookie" value="I Agree">
 	</div>
 </form>
 <script>
@@ -178,3 +184,4 @@
 	cookieLink.onclick = cookie;
 	
 </script>
+<?php endif; ?>
