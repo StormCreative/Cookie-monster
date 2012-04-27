@@ -28,7 +28,7 @@ if ( checkCookie ( FALSE ) === FALSE ): ?>
 		max-width:900px;
 		overflow:hidden;
 		padding:.7em;
-		width:100%;
+		width:96%;
 		
 		/* Styles */
 		background: #58585a; /* Old browsers */
