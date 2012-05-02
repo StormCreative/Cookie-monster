@@ -12,7 +12,7 @@ function checkCookie ( $redirect = TRUE )
 		else
 			return FALSE;
 	}
-	elseif ( isset ( $_COOKIE[ 'user_auth' ] ) )
+	elseif ( !!$_COOKIE[ 'user_auth' ] )
 		return TRUE;
 }
 	
@@ -23,8 +23,9 @@ function setCookies ()
 {
 	if ( !!$_POST[ 'accept_cookie' ] )
 	{
-		setcookie( "user_auth", TRUE );	
-		header ( 'location: /' );
+		//setcookie( "user_auth", TRUE );	
+		$redirect = substr( $_SERVER["REQUEST_URI"], 1 );
+		header ( 'location: /cookie-direct.php?uri='.$redirect );
 	}
 }
 

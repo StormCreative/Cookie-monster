@@ -13,6 +13,8 @@ Place the files within the includes file ( Assets/Includes ) and place the Cooki
 `<body>     
 <?php include 'Assets/Includes/Cookie.php' ?>`
 
+Will need to put 'Cookie-direct.php' at the ROUTE of the site. As we found there was a bug of the Cookie not being consistently picked up throughout the domain...
+
 Wrap anything that relies on a session to be set, for example showing an 'add' button for a shopping cart:
 
 `if ( checkCookie ( FALSE ) === TRUE )`
