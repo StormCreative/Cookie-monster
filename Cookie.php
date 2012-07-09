@@ -143,12 +143,12 @@ if ( checkCookie ( FALSE ) === FALSE ): ?>
 	}
 	
 	/* IE Fixes */
-	.ie7-cookie,
-	.ie6-cookie {
+	.ie7-cookie .cookie__contain,
+	.ie6-cookie .cookie__contain {
 		padding-bottom:.2em;	
 	}
 	
-	.ie6-cookie {
+	.ie6-cookie .cookie__contain {
 		width:900px;	
 	}
 	
@@ -159,9 +159,9 @@ if ( checkCookie ( FALSE ) === FALSE ): ?>
 	
 </style>
 <form class="storm-cookie" action="" method="post">
-    <!--[if IE 6]><div class="cookie__contain ie6-cookie"><![endif]-->
-    <!--[if IE 7]><div class="cookie__contain ie7-cookie"><![endif]-->
-	<!--[if gt IE 7]><!--> <div class="cookie__contain"> <!--<![endif]-->
+    <!--[if IE 6]><div class="ie6-cookie"><![endif]-->
+    <!--[if IE 7]><div class="ie7-cookie"><![endif]-->
+    <div class="cookie__contain">
         <p class="cookie__title">Important</p>
         <div class="cookie__content">
             <p>This website requires the use of cookies to operate correctly and for your convenience when revisiting in the future. Please click "I Agree" if you would like to enable cookies on this website. For more information <span id="js-cookie-link" class="cookie__link">click here</span>.</p>
@@ -169,6 +169,8 @@ if ( checkCookie ( FALSE ) === FALSE ): ?>
         </div>
         <input type="submit" class="cookie__submit" name="accept_cookie" value="I Agree">
 	</div>
+    <!--[if IE 6]></div><![endif]-->
+    <!--[if IE 7]></div><![endif]-->
 </form>
 <script>
 	var cookieLink = document.getElementById('js-cookie-link'),
